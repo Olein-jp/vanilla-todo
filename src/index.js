@@ -24,6 +24,9 @@ const onClickAdd = () => {
   // 10. 完了ボタンの生成
   const completeButton = document.createElement("button");
 
+  // 11. 完了ボタンに「完了」とテキストを挿入する
+  completeButton.innerText = "完了";
+
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
   taskItem.appendChild(taskItemTitle);
 
