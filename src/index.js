@@ -2,7 +2,8 @@ import "./styles.css";
 
 // 2. クリックイベントを作成
 const onClickAdd = () => {
-  alert("追加ボタンをクリック");
+  // 3. input に入力された TODO タイトルを取得する
+  const inputTaskTitle = document.getElementById("input-task-title").value;
 };
 
 // 2. 追加ボタンがクリックされたら発火するイベントを作成
