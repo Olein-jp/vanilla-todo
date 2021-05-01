@@ -24,6 +24,9 @@ const onClickAdd = () => {
   // 10. 完了ボタンの生成
   const completeButton = document.createElement("button");
 
+  // 16. 完了ボタン・削除ボタンにCSSクラスを追加する
+  completeButton.className = "c-button c-button_complete";
+
   // 11. 完了ボタンに「完了」とテキストを挿入する
   completeButton.innerText = "完了";
 
@@ -32,6 +35,9 @@ const onClickAdd = () => {
    */
   // 12. 削除ボタンの生成
   const deleteButton = document.createElement("button");
+
+  // 16. 完了ボタン・削除ボタンにCSSクラスを追加する
+  deleteButton.className = "c-button c-button_delete";
 
   // 13. 削除ボタンに「削除」とテキストを挿入する
   deleteButton.innerText = "削除";
