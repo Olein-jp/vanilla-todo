@@ -11,6 +11,7 @@ React の学習の一貫で、プレーンな JavaScript で TODO リストア�
 3. input に入力された TODO タイトルを取得する
 4. TODO タイトルが入力され追加ボタンが押されたら input 内を次のタスク入力のために初期化する
 5. 未完了タスクに追加するタスクのアイテム全体の要素を生成する（ `.p-uncomplete-task-list__item` ）
+6. TODO タイトルを入れる要素を生成（ `<span></span>` ）
 
 ## 必要なメソッドなど
 
