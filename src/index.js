@@ -32,7 +32,9 @@ const onClickAdd = () => {
 
   // 17. 完了ボタン・削除ボタンが押された際の処理の雛形を作成する
   completeButton.addEventListener("click", () => {
-    alert("完了ボタンを押したよ");
+    // 20. 完了ボタンを押した際にタスクアイテムを削除（ `18.` `19.` と同様の処理）
+    const completeTarget = completeButton.parentNode;
+    document.getElementById("uncomplete-task-list").removeChild(completeTarget);
   });
 
   /**
