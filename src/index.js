@@ -10,7 +10,7 @@ const onClickAdd = () => {
 
   // 5. 未完了タスクに追加するタスクアイテム全体の要素を生成
   const taskItem = document.createElement("li");
-  taskItem.classname = "p-uncomplete-task-list__item";
+  taskItem.className = "p-uncomplete-task-list__item";
 
   // 6. TODO タイトルを入れる要素を生成
   const taskItemTitle = document.createElement("span");
