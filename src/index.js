@@ -30,6 +30,11 @@ const onClickAdd = () => {
   // 11. 完了ボタンに「完了」とテキストを挿入する
   completeButton.innerText = "完了";
 
+  // 17. 完了ボタン・削除ボタンが押された際の処理の雛形を作成する
+  completeButton.addEventListener("click", () => {
+    alert("完了ボタンを押したよ");
+  });
+
   /**
    * 削除ボタン
    */
@@ -41,6 +46,11 @@ const onClickAdd = () => {
 
   // 13. 削除ボタンに「削除」とテキストを挿入する
   deleteButton.innerText = "削除";
+
+  // 17. 完了ボタン・削除ボタンが押された際の処理の雛形を作成する
+  deleteButton.addEventListener("click", () => {
+    alert("削除ボタンを押したよ");
+  });
 
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
   taskItem.appendChild(taskItemTitle);
