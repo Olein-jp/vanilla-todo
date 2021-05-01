@@ -14,6 +14,9 @@ const onClickAdd = () => {
 
   // 6. TODO タイトルを入れる要素を生成
   const taskItemTitle = document.createElement("span");
+
+  // 7. `3.` で取得した TODO タイトルを `6.` で生成した要素に挿入する
+  taskItemTitle.innerText = inputTaskTitle;
 };
 
 // 2. 追加ボタンがクリックされたら発火するイベントを作成
