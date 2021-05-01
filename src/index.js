@@ -32,9 +32,12 @@ const onClickAdd = () => {
 
   // 17. 完了ボタン・削除ボタンが押された際の処理の雛形を作成する
   completeButton.addEventListener("click", () => {
+    // 21. 削除処理が重複しているので関数化
+    deleteFromUncompleteList(completeButton.parentNode);
+
     // 20. 完了ボタンを押した際にタスクアイテムを削除（ `18.` `19.` と同様の処理）
-    const completeTarget = completeButton.parentNode;
-    document.getElementById("uncomplete-task-list").removeChild(completeTarget);
+    // const completeTarget = completeButton.parentNode;
+    // document.getElementById("uncomplete-task-list").removeChild(completeTarget);
   });
 
   /**
@@ -51,11 +54,14 @@ const onClickAdd = () => {
 
   // 17. 完了ボタン・削除ボタンが押された際の処理の雛形を作成する
   deleteButton.addEventListener("click", () => {
+    // 21. 削除処理が重複しているので関数化
+    deleteFromUncompleteList(deleteButton.parentNode);
+
     // 18. 削除ボタンを押した際にタスクアイテムの親要素を取得する
-    const deleteTarget = deleteButton.parentNode;
+    // const deleteTarget = deleteButton.parentNode;
 
     // 19. `18.` の親要素を使って削除ボタンを押してタスクアイテムを削除
-    document.getElementById("uncomplete-task-list").removeChild(deleteTarget);
+    // document.getElementById("uncomplete-task-list").removeChild(deleteTarget);
   });
 
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
@@ -69,6 +75,11 @@ const onClickAdd = () => {
 
   // 9. タスクアイテムを未完了タスクに追加する
   document.getElementById("uncomplete-task-list").appendChild(taskItem);
+};
+
+// 21. 削除処理が重複しているので関数化
+const deleteFromUncompleteList = (target) => {
+  document.getElementById("uncomplete-task-list").removeChild(target);
 };
 
 // 2. 追加ボタンがクリックされたら発火するイベントを作成
