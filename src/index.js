@@ -4,8 +4,13 @@ import "./styles.css";
 const onClickAdd = () => {
   // 3. input に入力された TODO タイトルを取得する
   const inputTaskTitle = document.getElementById("input-task-title").value;
+
   // 4. TODOタイトルが入力され追加ボタンが押されたら input 内を次のタスク入力のために初期化する
   document.getElementById("input-task-title").value = "";
+
+  // 5. 未完了タスクに追加するタスクアイテム全体の要素を生成
+  const taskItem = document.createElement("li");
+  taskItem.classname = "p-uncomplete-task-list__item";
 };
 
 // 2. 追加ボタンがクリックされたら発火するイベントを作成
