@@ -38,6 +38,10 @@ const onClickAdd = () => {
     // 22. 完了タスクへ追加するタスクアイテムの親要素を取得する
     const MoveToCompleteListTarget = completeButton.parentNode;
 
+    // 23. タスクアイテムの TODO タイトルを変数へ抜き出す
+    const MoveToCompleteListTargetTitle =
+      MoveToCompleteListTarget.firstElementChild.innerText;
+
     // 20. 完了ボタンを押した際にタスクアイテムを削除（ `18.` `19.` と同様の処理）
     // const completeTarget = completeButton.parentNode;
     // document.getElementById("uncomplete-task-list").removeChild(completeTarget);
