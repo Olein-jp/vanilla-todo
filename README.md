@@ -6,7 +6,7 @@ React の学習の一貫で、プレーンな JavaScript で TODO リストア�
 
 ## 制作の手順
 
-1. HTML と　 CSS の雛形を作成する
+1. HTML と CSS の雛形を作成する
 
 ## 必要なメソッドなど
 
