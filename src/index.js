@@ -49,7 +49,8 @@ const onClickAdd = () => {
 
   // 17. 完了ボタン・削除ボタンが押された際の処理の雛形を作成する
   deleteButton.addEventListener("click", () => {
-    alert("削除ボタンを押したよ");
+    // 18. 削除ボタンを押した際にタスクアイテムの親要素を取得する
+    const deleteTarget = deleteButton.parentNode;
   });
 
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
