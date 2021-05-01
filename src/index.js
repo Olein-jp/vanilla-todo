@@ -42,6 +42,9 @@ const onClickAdd = () => {
   // 14. タスクアイテムに完了ボタンを追加する
   taskItem.appendChild(completeButton);
 
+  // 15. タスクアイテムに削除ボタンを追加する
+  taskItem.appendChild(deleteButton);
+
   // 9. タスクアイテムを未完了タスクに追加する
   document.getElementById("uncomplete-task-list").appendChild(taskItem);
 };
