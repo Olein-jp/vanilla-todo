@@ -51,6 +51,9 @@ const onClickAdd = () => {
   deleteButton.addEventListener("click", () => {
     // 18. 削除ボタンを押した際にタスクアイテムの親要素を取得する
     const deleteTarget = deleteButton.parentNode;
+
+    // 19. `18.` の親要素を使って削除ボタンを押してタスクアイテムを削除
+    document.getElementById("uncomplete-task-list").removeChild(deleteTarget);
   });
 
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
