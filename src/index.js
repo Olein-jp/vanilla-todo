@@ -18,6 +18,12 @@ const onClickAdd = () => {
   // 7. `3.` で取得した TODO タイトルを `6.` で生成した要素に挿入する
   taskItemTitle.innerText = inputTaskTitle;
 
+  /**
+   * 完了ボタン
+   */
+  // 10. 完了ボタンの生成
+  const completeButton = document.createElement("button");
+
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
   taskItem.appendChild(taskItemTitle);
 
