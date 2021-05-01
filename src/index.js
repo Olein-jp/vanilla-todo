@@ -20,6 +20,9 @@ const onClickAdd = () => {
 
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
   taskItem.appendChild(taskItemTitle);
+
+  // 9. タスクアイテムを未完了タスクに追加する
+  document.getElementById("uncomplete-task-list").appendChild(taskItem);
 };
 
 // 2. 追加ボタンがクリックされたら発火するイベントを作成
