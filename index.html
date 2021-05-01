@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>TODO App by Vanilla</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="c-container">
+      <header class="p-add-task-area c-section">
+        <h1 class="p-add-task-area__title c-section-title">TODOアプリ</h1>
+        <input type="text" class="p-add-task-area__input" />
+        <button class="p-add-task-area__add-button c-button c-button_add-task">
+          追加
+        </button>
+      </header>
+      <div class="p-uncomplete-task-area c-section">
+        <h2 class="c-section-title">未完了タスク</h2>
+        <ul class="p-uncomplete-task-list">
+          <li class="p-uncomplete-task-list__item">
+            <span>タスクのタイトルが入ります</span>
+            <button class="c-button c-button_complete">完了</button>
+            <button class="c-button c-button_delete">削除</button>
+          </li>
+        </ul>
+      </div>
+      <div class="p-complete-task-area c-section">
+        <h2 class="c-section-title">完了タスク</h2>
+        <ul class="p-complete-task-list">
+          <li class="p-complete-task-list__item">
+            <span>タスクのタイトルが入ります</span>
+            <button class="c-button c-button_return">戻す</button>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+    <script src="src/index.js"></script>
+  </body>
 </html>

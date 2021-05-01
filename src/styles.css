@@ -1,3 +1,68 @@
 body {
+  background-color: #f4f4f4;
   font-family: sans-serif;
+  color: #555555;
+}
+
+.c-container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+.c-section-title {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.c-button {
+  border: none;
+  background-color: #555555;
+  color: white;
+  padding: 4px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.c-button_add-task {
+  background-color: #d82b03;
+}
+.c-button_complete {
+  background-color: #183945;
+}
+.c-button_delete {
+  background-color: #116973;
+}
+.c-button_return {
+  background-color: #02a4a8;
+}
+
+.c-section {
+  background-color: #f4f4f4;
+  padding: 30px 15px;
+  margin-bottom: 15px;
+}
+.c-section:last-child {
+  margin-bottom: 0;
+}
+
+.p-add-task-area {
+  text-align: center;
+}
+.p-add-task-area__title {
+  font-size: 24px;
+  margin-top: 0;
+}
+.p-add-task-area__input {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #cccccc;
+}
+
+.p-uncomplete-task-area {
+  background-color: #f4f4f4;
+  padding: 15px;
 }
