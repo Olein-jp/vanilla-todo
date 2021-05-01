@@ -27,6 +27,12 @@ const onClickAdd = () => {
   // 11. 完了ボタンに「完了」とテキストを挿入する
   completeButton.innerText = "完了";
 
+  /**
+   * 削除ボタン
+   */
+  // 12. 削除ボタンの生成
+  const deleteButton = document.createElement("button");
+
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
   taskItem.appendChild(taskItemTitle);
 
