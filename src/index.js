@@ -39,6 +39,9 @@ const onClickAdd = () => {
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
   taskItem.appendChild(taskItemTitle);
 
+  // 14. タスクアイテムに完了ボタンを追加する
+  taskItem.appendChild(completeButton);
+
   // 9. タスクアイテムを未完了タスクに追加する
   document.getElementById("uncomplete-task-list").appendChild(taskItem);
 };
