@@ -33,6 +33,9 @@ const onClickAdd = () => {
   // 12. 削除ボタンの生成
   const deleteButton = document.createElement("button");
 
+  // 13. 削除ボタンに「削除」とテキストを挿入する
+  deleteButton.innerText = "削除";
+
   // 8. `5.` で生成したタスクアイテム全体の中に `7.` で作成した TODO タイトルを追加する
   taskItem.appendChild(taskItemTitle);
 
