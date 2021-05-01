@@ -35,6 +35,9 @@ const onClickAdd = () => {
     // 21. 削除処理が重複しているので関数化
     deleteFromUncompleteList(completeButton.parentNode);
 
+    // 22. 完了タスクへ追加するタスクアイテムの親要素を取得する
+    const MoveToCompleteListTarget = completeButton.parentNode;
+
     // 20. 完了ボタンを押した際にタスクアイテムを削除（ `18.` `19.` と同様の処理）
     // const completeTarget = completeButton.parentNode;
     // document.getElementById("uncomplete-task-list").removeChild(completeTarget);
