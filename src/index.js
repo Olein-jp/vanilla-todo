@@ -67,6 +67,11 @@ const onClickAdd = () => {
     returnButton.addEventListener("click", () => {
       // 34. 完了タスクから（戻すために）削除するタスクを変数に入れる
       const MoveToUncompleteListTarget = returnButton.parentNode;
+
+      // 35. 完了タスクから削除する
+      document
+        .getElementById("complete-task-list")
+        .removeChild(MoveToUncompleteListTarget);
     });
 
     // 30. 戻すボタンをタスクアイテムに挿入する
