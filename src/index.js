@@ -42,6 +42,9 @@ const onClickAdd = () => {
     const MoveToCompleteListTargetTitle =
       MoveToCompleteListTarget.firstElementChild.innerText;
 
+    // 24. タスクアイテムの内容を初期化する
+    MoveToCompleteListTarget.textContent = null;
+
     // 20. 完了ボタンを押した際にタスクアイテムを削除（ `18.` `19.` と同様の処理）
     // const completeTarget = completeButton.parentNode;
     // document.getElementById("uncomplete-task-list").removeChild(completeTarget);
