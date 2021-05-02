@@ -54,8 +54,12 @@ const onClickAdd = () => {
     // 27. TODO タイトルをタスクアイテムに挿入する
     MoveToCompleteListTarget.appendChild(taskItemTitle);
 
-    // 28. 戻るボタンの生成
+    // 28. 戻すボタンの生成
     const returnButton = document.createElement("button");
+
+    // 29. 戻すボタンに「戻る」とテキストを挿入する
+    returnButton.innerText = "戻す";
+    console.log(returnButton);
 
     // 20. 完了ボタンを押した際にタスクアイテムを削除（ `18.` `19.` と同様の処理）
     // const completeTarget = completeButton.parentNode;
