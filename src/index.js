@@ -57,9 +57,14 @@ const onClickAdd = () => {
     // 28. 戻すボタンの生成
     const returnButton = document.createElement("button");
 
+    // 31. 戻すボタンに CSS クラスを追加する
+    returnButton.className = "c-button c-button_return";
+
     // 29. 戻すボタンに「戻る」とテキストを挿入する
     returnButton.innerText = "戻す";
-    console.log(returnButton);
+
+    // 30. 戻すボタンをタスクアイテムに挿入する
+    MoveToCompleteListTarget.appendChild(returnButton);
 
     // 20. 完了ボタンを押した際にタスクアイテムを削除（ `18.` `19.` と同様の処理）
     // const completeTarget = completeButton.parentNode;
