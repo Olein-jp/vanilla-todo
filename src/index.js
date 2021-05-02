@@ -51,6 +51,9 @@ const onClickAdd = () => {
     // 26. 完了タスクへ追加するタスクアイテムに TODO タイトルを挿入する
     taskItemTitle.innerText = MoveToCompleteListTargetTitle;
 
+    // 27. 戻すボタンを作る
+    const returnButton = document.createElement("button");
+
     // 20. 完了ボタンを押した際にタスクアイテムを削除（ `18.` `19.` と同様の処理）
     // const completeTarget = completeButton.parentNode;
     // document.getElementById("uncomplete-task-list").removeChild(completeTarget);
