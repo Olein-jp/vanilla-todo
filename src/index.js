@@ -72,6 +72,9 @@ const onClickAdd = () => {
       document
         .getElementById("complete-task-list")
         .removeChild(MoveToUncompleteListTarget);
+
+      // 36. 戻すタスク名を取得する
+      const taskItemTitle = returnButton.parentNode.firstElementChild.innerText;
     });
 
     // 30. 戻すボタンをタスクアイテムに挿入する
