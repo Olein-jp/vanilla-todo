@@ -63,6 +63,11 @@ const onClickAdd = () => {
     // 29. 戻すボタンに「戻る」とテキストを挿入する
     returnButton.innerText = "戻す";
 
+    // 33. 戻すボタンが押された際の処理の雛形を作成する
+    returnButton.addEventListener("click", () => {
+      alert("戻すボタンが押されたよ！");
+    });
+
     // 30. 戻すボタンをタスクアイテムに挿入する
     MoveToCompleteListTarget.appendChild(returnButton);
 
