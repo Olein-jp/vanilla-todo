@@ -8,6 +8,17 @@ const onClickAdd = () => {
   // 4. TODOタイトルが入力され追加ボタンが押されたら input 内を次のタスク入力のために初期化する
   document.getElementById("input-task-title").value = "";
 
+  // 37. 未完了タスクへタスクを追加する処理を関数化する
+  moveToCompleteList(inputTaskTitle);
+};
+
+// 21. 削除処理が重複しているので関数化
+const deleteFromUncompleteList = (target) => {
+  document.getElementById("uncomplete-task-list").removeChild(target);
+};
+
+// 37. 未完了タスクへタスクを追加する処理を関数化する
+const moveToCompleteList = (text) => {
   // 5. 未完了タスクに追加するタスクアイテム全体の要素を生成
   const taskItem = document.createElement("li");
   taskItem.className = "p-uncomplete-task-list__item";
@@ -16,7 +27,7 @@ const onClickAdd = () => {
   const taskItemTitle = document.createElement("span");
 
   // 7. `3.` で取得した TODO タイトルを `6.` で生成した要素に挿入する
-  taskItemTitle.innerText = inputTaskTitle;
+  taskItemTitle.innerText = text;
 
   /**
    * 完了ボタン
@@ -75,6 +86,9 @@ const onClickAdd = () => {
 
       // 36. 戻すタスク名を取得する
       const taskItemTitle = returnButton.parentNode.firstElementChild.innerText;
+
+      // 37. 未完了タスクへタスクを追加する処理を関数化する
+      moveToCompleteList(taskItemTitle);
     });
 
     // 30. 戻すボタンをタスクアイテムに挿入する
@@ -125,11 +139,6 @@ const onClickAdd = () => {
 
   // 9. タスクアイテムを未完了タスクに追加する
   document.getElementById("uncomplete-task-list").appendChild(taskItem);
-};
-
-// 21. 削除処理が重複しているので関数化
-const deleteFromUncompleteList = (target) => {
-  document.getElementById("uncomplete-task-list").removeChild(target);
 };
 
 // 2. 追加ボタンがクリックされたら発火するイベントを作成
