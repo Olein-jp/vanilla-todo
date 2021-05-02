@@ -65,7 +65,8 @@ const onClickAdd = () => {
 
     // 33. 戻すボタンが押された際の処理の雛形を作成する
     returnButton.addEventListener("click", () => {
-      alert("戻すボタンが押されたよ！");
+      // 34. 完了タスクから（戻すために）削除するタスクを変数に入れる
+      const MoveToUncompleteListTarget = returnButton.parentNode;
     });
 
     // 30. 戻すボタンをタスクアイテムに挿入する
