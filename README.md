@@ -47,4 +47,18 @@ React の学習の一貫で、プレーンな JavaScript で TODO リストア�
 
 ## 必要なメソッドなど
 
--
+- `ducument`
+- `getElementById()`
+- `addEventListener()`
+- アロー関数
+- `const`、`let`
+- `.value`
+- `.className`
+- `.createElement()`
+- `innerText()`
+- `appendChild()`
+- `parentNode`
+- `firstElementChild`
+- `textContent`
+- `removeChild`
+- `firstElementChild`
